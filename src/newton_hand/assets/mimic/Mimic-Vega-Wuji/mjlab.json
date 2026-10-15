@@ -1,0 +1,3318 @@
+{
+ "task": "Mimic-Vega-Wuji",
+ "hand": "wuji",
+ "arm": "vega",
+ "palm_body": "right_palm_link",
+ "keypoint_bodies": [
+  "right_finger1_tip",
+  "right_finger2_tip",
+  "right_finger3_tip",
+  "right_finger4_tip",
+  "right_finger5_tip"
+ ],
+ "keypoint_geom_pattern": "right_finger.*_link4_collision_1",
+ "object": "apple",
+ "motion_files": [
+  "s1_apple_lift.npz"
+ ],
+ "joint_names": [
+  "R_arm_j1",
+  "R_arm_j2",
+  "R_arm_j3",
+  "R_arm_j4",
+  "R_arm_j5",
+  "R_arm_j6",
+  "R_arm_j7",
+  "right_finger1_joint1",
+  "right_finger1_joint2",
+  "right_finger1_joint3",
+  "right_finger1_joint4",
+  "right_finger2_joint1",
+  "right_finger2_joint2",
+  "right_finger2_joint3",
+  "right_finger2_joint4",
+  "right_finger3_joint1",
+  "right_finger3_joint2",
+  "right_finger3_joint3",
+  "right_finger3_joint4",
+  "right_finger4_joint1",
+  "right_finger4_joint2",
+  "right_finger4_joint3",
+  "right_finger4_joint4",
+  "right_finger5_joint1",
+  "right_finger5_joint2",
+  "right_finger5_joint3",
+  "right_finger5_joint4"
+ ],
+ "body_names": [
+  "mocap_base",
+  "base_link",
+  "lift_link",
+  "torso_flip_link",
+  "arm_center",
+  "head_l1",
+  "head_l2",
+  "head_l3",
+  "zed_depth_frame",
+  "zed_left_camera",
+  "zed_right_camera",
+  "L_arm_l1",
+  "L_arm_l2",
+  "L_arm_l3",
+  "L_arm_l4",
+  "L_arm_l5",
+  "L_arm_l6",
+  "L_arm_l7",
+  "L_arm_l8",
+  "L_ee",
+  "R_arm_l1",
+  "R_arm_l2",
+  "R_arm_l3",
+  "R_arm_l4",
+  "R_arm_l5",
+  "R_arm_l6",
+  "R_arm_l7",
+  "R_arm_l8",
+  "R_ee",
+  "right_palm_link",
+  "right_finger1_link1",
+  "right_finger1_link2",
+  "right_finger1_link3",
+  "right_finger1_link4",
+  "right_finger1_tip",
+  "right_finger2_link1",
+  "right_finger2_link2",
+  "right_finger2_link3",
+  "right_finger2_link4",
+  "right_finger2_tip",
+  "right_finger3_link1",
+  "right_finger3_link2",
+  "right_finger3_link3",
+  "right_finger3_link4",
+  "right_finger3_tip",
+  "right_finger4_link1",
+  "right_finger4_link2",
+  "right_finger4_link3",
+  "right_finger4_link4",
+  "right_finger4_tip",
+  "right_finger5_link1",
+  "right_finger5_link2",
+  "right_finger5_link3",
+  "right_finger5_link4",
+  "right_finger5_tip"
+ ],
+ "default_joint_pos": [
+  -1.809000015258789,
+  -0.6359999775886536,
+  0.24400000274181366,
+  -2.0399999618530273,
+  -0.8410000205039978,
+  -0.1289999932050705,
+  0.8330000042915344,
+  1.5,
+  0.0,
+  0.5,
+  0.5,
+  0.30000001192092896,
+  0.0,
+  0.4000000059604645,
+  0.4000000059604645,
+  0.30000001192092896,
+  0.0,
+  0.4000000059604645,
+  0.4000000059604645,
+  0.30000001192092896,
+  0.0,
+  0.4000000059604645,
+  0.4000000059604645,
+  0.30000001192092896,
+  0.0,
+  0.4000000059604645,
+  0.4000000059604645
+ ],
+ "soft_joint_pos_limits": [
+  [
+   -2.917449951171875,
+   2.917449951171875
+  ],
+  [
+   -1.5028499364852905,
+   0.40285003185272217
+  ],
+  [
+   -2.917449951171875,
+   2.917449951171875
+  ],
+  [
+   -2.9881250858306885,
+   0.16112494468688965
+  ],
+  [
+   -2.917449951171875,
+   2.917449951171875
+  ],
+  [
+   -1.326200008392334,
+   1.326200008392334
+  ],
+  [
+   -1.0546247959136963,
+   1.3156249523162842
+  ],
+  [
+   0.0863950252532959,
+   1.5644049644470215
+  ],
+  [
+   -0.1119225025177002,
+   0.9056224822998047
+  ],
+  [
+   -0.41353750228881836,
+   1.5116374492645264
+  ],
+  [
+   -0.41923248767852783,
+   1.5061324834823608
+  ],
+  [
+   -0.1155274510383606,
+   1.5174274444580078
+  ],
+  [
+   -0.351500004529953,
+   0.351500004529953
+  ],
+  [
+   -0.42704492807388306,
+   1.497844934463501
+  ],
+  [
+   -0.41721004247665405,
+   1.524209976196289
+  ],
+  [
+   -0.12149995565414429,
+   1.508699893951416
+  ],
+  [
+   -0.351500004529953,
+   0.351500004529953
+  ],
+  [
+   -0.42327243089675903,
+   1.5005724430084229
+  ],
+  [
+   -0.41732752323150635,
+   1.5234274864196777
+  ],
+  [
+   -0.11255252361297607,
+   1.5156525373458862
+  ],
+  [
+   -0.351500004529953,
+   0.351500004529953
+  ],
+  [
+   -0.4258699417114258,
+   1.4980698823928833
+  ],
+  [
+   -0.42667245864868164,
+   1.5123724937438965
+  ],
+  [
+   -0.11957252025604248,
+   1.5154725313186646
+  ],
+  [
+   -0.351500004529953,
+   0.351500004529953
+  ],
+  [
+   -0.4261549711227417,
+   1.4983550310134888
+  ],
+  [
+   -0.4172549843788147,
+   1.5224549770355225
+  ]
+ ],
+ "joint_limits": [
+  [
+   -3.071000099182129,
+   3.071000099182129
+  ],
+  [
+   -1.5529999732971191,
+   0.453000009059906
+  ],
+  [
+   -3.071000099182129,
+   3.071000099182129
+  ],
+  [
+   -3.071000099182129,
+   0.24400000274181366
+  ],
+  [
+   -3.071000099182129,
+   3.071000099182129
+  ],
+  [
+   -1.3960000276565552,
+   1.3960000276565552
+  ],
+  [
+   -1.1169999837875366,
+   1.378000020980835
+  ],
+  [
+   0.04749999940395355,
+   1.6032999753952026
+  ],
+  [
+   -0.1386999934911728,
+   0.9323999881744385
+  ],
+  [
+   -0.4641999900341034,
+   1.5622999668121338
+  ],
+  [
+   -0.4699000120162964,
+   1.5568000078201294
+  ],
+  [
+   -0.15850000083446503,
+   1.5604000091552734
+  ],
+  [
+   -0.3700000047683716,
+   0.3700000047683716
+  ],
+  [
+   -0.47769999504089355,
+   1.5484999418258667
+  ],
+  [
+   -0.4683000147342682,
+   1.5752999782562256
+  ],
+  [
+   -0.16439999639987946,
+   1.5515999794006348
+  ],
+  [
+   -0.3700000047683716,
+   0.3700000047683716
+  ],
+  [
+   -0.4738999903202057,
+   1.551200032234192
+  ],
+  [
+   -0.4684000015258789,
+   1.5744999647140503
+  ],
+  [
+   -0.15539999306201935,
+   1.558500051498413
+  ],
+  [
+   -0.3700000047683716,
+   0.3700000047683716
+  ],
+  [
+   -0.476500004529953,
+   1.548699975013733
+  ],
+  [
+   -0.47769999504089355,
+   1.5634000301361084
+  ],
+  [
+   -0.16259999573230743,
+   1.558500051498413
+  ],
+  [
+   -0.3700000047683716,
+   0.3700000047683716
+  ],
+  [
+   -0.47679999470710754,
+   1.5490000247955322
+  ],
+  [
+   -0.4683000147342682,
+   1.5735000371932983
+  ]
+ ],
+ "arm_actuators": [
+  {
+   "joints": [
+    "R_arm_j1",
+    "R_arm_j2"
+   ],
+   "stiffness": 100.0,
+   "damping": 1.0,
+   "effort_limit": 150.0
+  },
+  {
+   "joints": [
+    "R_arm_j3",
+    "R_arm_j4"
+   ],
+   "stiffness": 100.0,
+   "damping": 1.0,
+   "effort_limit": 80.0
+  },
+  {
+   "joints": [
+    "R_arm_j5",
+    "R_arm_j6",
+    "R_arm_j7"
+   ],
+   "stiffness": 100.0,
+   "damping": 1.0,
+   "effort_limit": 25.0
+  }
+ ],
+ "table_contact_excluded_bodies": [
+  "right_finger1_link4",
+  "right_finger2_link4",
+  "right_finger3_link4",
+  "right_finger4_link4",
+  "right_finger5_link4"
+ ],
+ "env": {
+  "decimation": 4,
+  "episode_length_s": 10.0,
+  "max_episode_length": 500,
+  "scale_rewards_by_dt": true,
+  "sim": {
+   "nconmax": 200,
+   "njmax": 1000,
+   "ls_parallel": true,
+   "contact_sensor_maxmatch": 64,
+   "mujoco": {
+    "timestep": 0.005,
+    "integrator": "implicitfast",
+    "impratio": 10,
+    "cone": "elliptic",
+    "jacobian": "auto",
+    "solver": "newton",
+    "iterations": 50,
+    "tolerance": 1e-08,
+    "ls_iterations": 50,
+    "ls_tolerance": 0.01,
+    "ccd_iterations": 50,
+    "gravity": [
+     0.0,
+     0.0,
+     -9.81
+    ],
+    "disableflags": [],
+    "enableflags": []
+   },
+   "nan_guard": {
+    "enabled": false,
+    "buffer_size": 100,
+    "output_dir": "/tmp/mjlab/nan_dumps",
+    "max_envs_to_dump": 5
+   }
+  }
+ },
+ "command": {
+  "resampling_time_range": [
+   1000000000.0,
+   1000000000.0
+  ],
+  "debug_vis": false,
+  "entity_name": "hand",
+  "palm_body": "right_palm_link",
+  "object_name": "object",
+  "motion_files": [
+   "/home/kartik/mjlab_hand/data/mimic/wuji_vega/s1_apple_lift.npz"
+  ],
+  "fps": 50.0,
+  "lookahead": [
+   0,
+   2,
+   5,
+   10
+  ],
+  "sampling_mode": "adaptive",
+  "adaptive_kernel_size": 1,
+  "adaptive_lambda": 0.8,
+  "adaptive_uniform_ratio": 0.1,
+  "adaptive_alpha": 0.001,
+  "start_prob": 0.2,
+  "root_pos_noise": 0.01,
+  "root_rot_noise": 0.05,
+  "arm_joint_noise": 0.01,
+  "joint_pos_noise": 0.05,
+  "contact_threshold": 0.005,
+  "viz": {
+   "ghost_color": [
+    0.5,
+    0.7,
+    0.5,
+    0.4
+   ],
+   "tip_radius": 0.006
+  }
+ },
+ "action": {
+  "entity_name": "hand",
+  "clip": null,
+  "command_name": "motion",
+  "pos_step": 0.04,
+  "rot_step": 0.15,
+  "max_lead_pos": 0.05,
+  "max_lead_rot": 0.3,
+  "finger_scale": 0.2,
+  "ik_damping": 0.05,
+  "nullspace_gain": 0.2,
+  "max_joint_step": 0.3
+ },
+ "observations": {
+  "actor": [
+   {
+    "name": "reference",
+    "noise": null,
+    "dim": 180
+   },
+   {
+    "name": "phase",
+    "noise": null,
+    "dim": 1
+   },
+   {
+    "name": "joint_pos",
+    "noise": [
+     -0.01,
+     0.01
+    ],
+    "dim": 27
+   },
+   {
+    "name": "joint_vel",
+    "noise": [
+     -0.5,
+     0.5
+    ],
+    "dim": 27
+   },
+   {
+    "name": "palm_vel",
+    "noise": [
+     -0.05,
+     0.05
+    ],
+    "dim": 6
+   },
+   {
+    "name": "palm_gravity",
+    "noise": null,
+    "dim": 3
+   },
+   {
+    "name": "keypoint_pos",
+    "noise": null,
+    "dim": 15
+   },
+   {
+    "name": "object_pose",
+    "noise": [
+     -0.005,
+     0.005
+    ],
+    "dim": 9
+   },
+   {
+    "name": "actions",
+    "noise": null,
+    "dim": 26
+   }
+  ],
+  "critic": [
+   {
+    "name": "reference",
+    "noise": null,
+    "dim": 180
+   },
+   {
+    "name": "phase",
+    "noise": null,
+    "dim": 1
+   },
+   {
+    "name": "joint_pos",
+    "noise": [
+     -0.01,
+     0.01
+    ],
+    "dim": 27
+   },
+   {
+    "name": "joint_vel",
+    "noise": [
+     -0.5,
+     0.5
+    ],
+    "dim": 27
+   },
+   {
+    "name": "palm_vel",
+    "noise": [
+     -0.05,
+     0.05
+    ],
+    "dim": 6
+   },
+   {
+    "name": "palm_gravity",
+    "noise": null,
+    "dim": 3
+   },
+   {
+    "name": "keypoint_pos",
+    "noise": null,
+    "dim": 15
+   },
+   {
+    "name": "object_pose",
+    "noise": [
+     -0.005,
+     0.005
+    ],
+    "dim": 9
+   },
+   {
+    "name": "actions",
+    "noise": null,
+    "dim": 26
+   },
+   {
+    "name": "object_vel",
+    "noise": null,
+    "dim": 6
+   },
+   {
+    "name": "contacts",
+    "noise": null,
+    "dim": 5
+   },
+   {
+    "name": "reference_contacts",
+    "noise": null,
+    "dim": 5
+   },
+   {
+    "name": "tracking_errors",
+    "noise": null,
+    "dim": 8
+   }
+  ]
+ },
+ "rewards": {
+  "root_pos": {
+   "weight": 0.5,
+   "params": {
+    "command_name": "motion",
+    "std": 0.05
+   }
+  },
+  "root_rot": {
+   "weight": 0.5,
+   "params": {
+    "command_name": "motion",
+    "std": 0.3
+   }
+  },
+  "keypoint_pos": {
+   "weight": 1.0,
+   "params": {
+    "command_name": "motion",
+    "std": 0.02
+   }
+  },
+  "joint_pos": {
+   "weight": 1.0,
+   "params": {
+    "command_name": "motion",
+    "std": 0.2
+   }
+  },
+  "body_lin_vel": {
+   "weight": 1.0,
+   "params": {
+    "command_name": "motion",
+    "std": 0.5
+   }
+  },
+  "root_ang_vel": {
+   "weight": 1.0,
+   "params": {
+    "command_name": "motion",
+    "std": 3.14
+   }
+  },
+  "object_pos": {
+   "weight": 2.0,
+   "params": {
+    "command_name": "motion",
+    "std": 0.05
+   }
+  },
+  "object_rot": {
+   "weight": 1.0,
+   "params": {
+    "command_name": "motion",
+    "std": 0.4
+   }
+  },
+  "contacts": {
+   "weight": 0.5,
+   "params": {
+    "command_name": "motion",
+    "sensor_name": "keypoint_contacts"
+   }
+  },
+  "action_rate": {
+   "weight": -0.1,
+   "params": {}
+  },
+  "undesired_contacts": {
+   "weight": -0.1,
+   "params": {
+    "sensor_name": "table_contacts",
+    "threshold": 1.0
+   }
+  },
+  "joint_limit": {
+   "weight": -10.0,
+   "params": {
+    "asset_cfg": {
+     "name": "hand",
+     "joint_names": [
+      "R_arm_j1",
+      "R_arm_j2",
+      "R_arm_j3",
+      "R_arm_j4",
+      "R_arm_j5",
+      "R_arm_j6",
+      "R_arm_j7"
+     ],
+     "joint_ids": "slice(None, None, None)",
+     "body_names": null,
+     "body_ids": "slice(None, None, None)",
+     "geom_names": null,
+     "geom_ids": "slice(None, None, None)",
+     "site_names": null,
+     "site_ids": "slice(None, None, None)",
+     "actuator_names": null,
+     "actuator_ids": "slice(None, None, None)",
+     "tendon_names": null,
+     "tendon_ids": "slice(None, None, None)",
+     "camera_names": null,
+     "camera_ids": "slice(None, None, None)",
+     "light_names": null,
+     "light_ids": "slice(None, None, None)",
+     "material_names": null,
+     "material_ids": "slice(None, None, None)",
+     "pair_names": null,
+     "pair_ids": "slice(None, None, None)",
+     "preserve_order": false
+    }
+   }
+  }
+ },
+ "terminations": {
+  "time_out": {
+   "time_out": true,
+   "params": {}
+  },
+  "motion_end": {
+   "time_out": true,
+   "params": {
+    "command_name": "motion"
+   }
+  },
+  "nan": {
+   "time_out": false,
+   "params": {}
+  },
+  "root_pos": {
+   "time_out": false,
+   "params": {
+    "command_name": "motion",
+    "threshold": 0.1
+   }
+  },
+  "object_pos": {
+   "time_out": false,
+   "params": {
+    "command_name": "motion",
+    "threshold": 0.1
+   }
+  }
+ },
+ "events": {
+  "reset_scene_to_default": {
+   "mode": "reset",
+   "params": {}
+  },
+  "keypoint_friction": {
+   "mode": "startup",
+   "params": {
+    "asset_cfg": {
+     "name": "hand",
+     "joint_names": null,
+     "joint_ids": "slice(None, None, None)",
+     "body_names": null,
+     "body_ids": "slice(None, None, None)",
+     "geom_names": "right_finger.*_link4_collision_1",
+     "geom_ids": "slice(None, None, None)",
+     "site_names": null,
+     "site_ids": "slice(None, None, None)",
+     "actuator_names": null,
+     "actuator_ids": "slice(None, None, None)",
+     "tendon_names": null,
+     "tendon_ids": "slice(None, None, None)",
+     "camera_names": null,
+     "camera_ids": "slice(None, None, None)",
+     "light_names": null,
+     "light_ids": "slice(None, None, None)",
+     "material_names": null,
+     "material_ids": "slice(None, None, None)",
+     "pair_names": null,
+     "pair_ids": "slice(None, None, None)",
+     "preserve_order": false
+    },
+    "operation": "abs",
+    "distribution": "uniform",
+    "axes": [
+     0
+    ],
+    "ranges": [
+     0.7,
+     1.2
+    ]
+   }
+  }
+ },
+ "ppo": {
+  "seed": 42,
+  "num_steps_per_env": 24,
+  "max_iterations": 20000,
+  "obs_groups": {
+   "actor": [
+    "actor"
+   ],
+   "critic": [
+    "critic"
+   ]
+  },
+  "save_interval": 500,
+  "experiment_name": "mimic_vega_wuji",
+  "run_name": "",
+  "logger": "wandb",
+  "wandb_project": "mjlab",
+  "wandb_tags": [],
+  "resume": false,
+  "load_run": ".*",
+  "load_checkpoint": "model_.*.pt",
+  "clip_actions": null,
+  "upload_model": true,
+  "class_name": "OnPolicyRunner",
+  "actor": {
+   "hidden_dims": [
+    512,
+    256,
+    128
+   ],
+   "activation": "elu",
+   "obs_normalization": true,
+   "cnn_cfg": null,
+   "distribution_cfg": {
+    "class_name": "GaussianDistribution",
+    "init_std": 0.5,
+    "std_type": "scalar"
+   },
+   "rnn_type": null,
+   "rnn_hidden_dim": 256,
+   "rnn_num_layers": 1,
+   "class_name": "MLPModel"
+  },
+  "critic": {
+   "hidden_dims": [
+    512,
+    256,
+    128
+   ],
+   "activation": "elu",
+   "obs_normalization": true,
+   "cnn_cfg": null,
+   "distribution_cfg": null,
+   "rnn_type": null,
+   "rnn_hidden_dim": 256,
+   "rnn_num_layers": 1,
+   "class_name": "MLPModel"
+  },
+  "algorithm": {
+   "num_learning_epochs": 5,
+   "num_mini_batches": 4,
+   "learning_rate": 0.001,
+   "schedule": "adaptive",
+   "gamma": 0.99,
+   "lam": 0.95,
+   "entropy_coef": 0.005,
+   "desired_kl": 0.01,
+   "max_grad_norm": 1.0,
+   "value_loss_coef": 1.0,
+   "use_clipped_value_loss": true,
+   "clip_param": 0.2,
+   "normalize_advantage_per_mini_batch": false,
+   "optimizer": "adam",
+   "share_cnn_encoders": false,
+   "class_name": "PPO"
+  }
+ },
+ "mj_params": {
+  "bodies": {
+   "terrain": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gravcomp": 0.0
+   },
+   "mocap_base": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gravcomp": 0.0
+   },
+   "base_link": {
+    "mass": 18.9103,
+    "inertia": [
+     0.89592,
+     0.74482,
+     0.60638
+    ],
+    "ipos": [
+     -0.00062,
+     -0.07869,
+     0.02414
+    ],
+    "gravcomp": 1.0
+   },
+   "lift_link": {
+    "mass": 4.35777,
+    "inertia": [
+     0.19546,
+     0.19538,
+     0.01487
+    ],
+    "ipos": [
+     -2.81873e-06,
+     0.00032,
+     0.5141
+    ],
+    "gravcomp": 1.0
+   },
+   "torso_flip_link": {
+    "mass": 0.71794,
+    "inertia": [
+     0.00244,
+     0.00128,
+     0.00119
+    ],
+    "ipos": [
+     -1.71092e-05,
+     0.06383,
+     0.00204
+    ],
+    "gravcomp": 1.0
+   },
+   "arm_center": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.03852,
+     0.25982
+    ],
+    "gravcomp": 1.0
+   },
+   "head_l1": {
+    "mass": 0.4378,
+    "inertia": [
+     0.000510004,
+     0.00043,
+     0.000249996
+    ],
+    "ipos": [
+     1.30097e-05,
+     0.07221,
+     -0.02629
+    ],
+    "gravcomp": 1.0
+   },
+   "head_l2": {
+    "mass": 0.60772,
+    "inertia": [
+     0.000559127,
+     0.00052,
+     0.000330873
+    ],
+    "ipos": [
+     5.66105e-07,
+     0.000244411,
+     0.0303453
+    ],
+    "gravcomp": 1.0
+   },
+   "head_l3": {
+    "mass": 0.63278,
+    "inertia": [
+     0.00083183,
+     0.00077837,
+     0.0003398
+    ],
+    "ipos": [
+     0.00816,
+     -0.00315,
+     0.03745
+    ],
+    "gravcomp": 1.0
+   },
+   "zed_depth_frame": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.025,
+     0.023,
+     0.0489
+    ],
+    "gravcomp": 1.0
+   },
+   "zed_left_camera": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0365,
+     0.023,
+     0.0489
+    ],
+    "gravcomp": 1.0
+   },
+   "zed_right_camera": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0365,
+     -0.027,
+     0.0489
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l1": {
+    "mass": 1.41351,
+    "inertia": [
+     0.00213118,
+     0.00208636,
+     0.00143245
+    ],
+    "ipos": [
+     0.0285,
+     0.05287,
+     0.00576
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l2": {
+    "mass": 1.40594,
+    "inertia": [
+     0.00441,
+     0.00418705,
+     0.00161295
+    ],
+    "ipos": [
+     0.08194,
+     -1.45468e-06,
+     -0.04058
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l3": {
+    "mass": 1.16094,
+    "inertia": [
+     0.00337779,
+     0.00326218,
+     0.00100003
+    ],
+    "ipos": [
+     0.07978,
+     0.00403,
+     0.0398
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l4": {
+    "mass": 0.93204,
+    "inertia": [
+     0.00309063,
+     0.00282456,
+     0.000884815
+    ],
+    "ipos": [
+     0.09219,
+     -0.03791,
+     -0.02953
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l5": {
+    "mass": 0.64582,
+    "inertia": [
+     0.000560131,
+     0.00052,
+     0.000339869
+    ],
+    "ipos": [
+     0.06497,
+     -0.00266,
+     1.20027e-05
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l6": {
+    "mass": 0.5542,
+    "inertia": [
+     0.000436354,
+     0.000380033,
+     0.000273612
+    ],
+    "ipos": [
+     0.05526,
+     -0.02615,
+     -0.00267
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l7": {
+    "mass": 0.35802,
+    "inertia": [
+     0.000376746,
+     0.00031,
+     0.000163254
+    ],
+    "ipos": [
+     0.032,
+     5.48376e-05,
+     -0.01786
+    ],
+    "gravcomp": 1.0
+   },
+   "L_arm_l8": {
+    "mass": 0.20064,
+    "inertia": [
+     9.2464e-05,
+     5.73583e-05,
+     5.66773e-05
+    ],
+    "ipos": [
+     -0.01782,
+     -0.00021,
+     0.00027
+    ],
+    "gravcomp": 1.0
+   },
+   "L_ee": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l1": {
+    "mass": 1.42401,
+    "inertia": [
+     0.0020254,
+     0.00190692,
+     0.00133768
+    ],
+    "ipos": [
+     0.02833,
+     -0.05,
+     0.0054
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l2": {
+    "mass": 1.40595,
+    "inertia": [
+     0.00441,
+     0.00418705,
+     0.00161295
+    ],
+    "ipos": [
+     0.08749,
+     -1.34526e-06,
+     -0.04135
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l3": {
+    "mass": 1.1608,
+    "inertia": [
+     0.00337861,
+     0.0032617,
+     0.000999685
+    ],
+    "ipos": [
+     0.08127,
+     0.00414,
+     0.04053
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l4": {
+    "mass": 0.93204,
+    "inertia": [
+     0.00309063,
+     0.00282456,
+     0.000884815
+    ],
+    "ipos": [
+     0.07728,
+     -0.03736,
+     -0.02906
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l5": {
+    "mass": 0.64582,
+    "inertia": [
+     0.000560132,
+     0.00052,
+     0.000339868
+    ],
+    "ipos": [
+     0.06457,
+     0.0025,
+     -1.30383e-05
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l6": {
+    "mass": 0.55372,
+    "inertia": [
+     0.000436454,
+     0.000380035,
+     0.000273511
+    ],
+    "ipos": [
+     0.05525,
+     0.02614,
+     -0.00267
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l7": {
+    "mass": 0.35802,
+    "inertia": [
+     0.000376746,
+     0.00031,
+     0.000163254
+    ],
+    "ipos": [
+     0.03048,
+     5.11736e-05,
+     -0.01709
+    ],
+    "gravcomp": 1.0
+   },
+   "R_arm_l8": {
+    "mass": 0.20064,
+    "inertia": [
+     9.2464e-05,
+     5.73592e-05,
+     5.66763e-05
+    ],
+    "ipos": [
+     -0.01782,
+     1.03176e-06,
+     0.00027
+    ],
+    "gravcomp": 1.0
+   },
+   "R_ee": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gravcomp": 1.0
+   },
+   "right_palm_link": {
+    "mass": 0.16914,
+    "inertia": [
+     0.000140677446,
+     9.58896475e-05,
+     5.81329061e-05
+    ],
+    "ipos": [
+     -0.00297947143114252,
+     0.000455717622711663,
+     0.0366540864104669
+    ],
+    "gravcomp": 1.0
+   },
+   "right_finger1_link1": {
+    "mass": 0.0075,
+    "inertia": [
+     3.37599e-07,
+     3.01198e-07,
+     2.11203e-07
+    ],
+    "ipos": [
+     -0.00246282,
+     -0.00124281,
+     0.00778015
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger1_link2": {
+    "mass": 0.0248,
+    "inertia": [
+     2.81725e-06,
+     2.75299e-06,
+     6.79766e-07
+    ],
+    "ipos": [
+     -0.00116283,
+     1.22067e-05,
+     0.0156645
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger1_link3": {
+    "mass": 0.0165,
+    "inertia": [
+     1.4604e-06,
+     1.42e-06,
+     4.49604e-07
+    ],
+    "ipos": [
+     -0.00112353,
+     -1.57896e-05,
+     0.0130562
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger1_link4": {
+    "mass": 0.0206,
+    "inertia": [
+     2.60181e-06,
+     2.58203e-06,
+     7.59817e-07
+    ],
+    "ipos": [
+     -0.00163662,
+     -0.000195004,
+     0.0113477
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger1_tip": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.0331350228436209
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger2_link1": {
+    "mass": 0.0032,
+    "inertia": [
+     1.1e-07,
+     7e-08,
+     5e-08
+    ],
+    "ipos": [
+     -0.00132915,
+     -3.29106e-08,
+     0.000319873
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger2_link2": {
+    "mass": 0.033,
+    "inertia": [
+     6.34e-06,
+     6.31472e-06,
+     8.85281e-07
+    ],
+    "ipos": [
+     -4.1182e-07,
+     0.00615772,
+     0.0209112
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger2_link3": {
+    "mass": 0.0165,
+    "inertia": [
+     1.47088e-06,
+     1.44e-06,
+     4.49118e-07
+    ],
+    "ipos": [
+     -0.00112142,
+     4.36128e-06,
+     0.0157628
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger2_link4": {
+    "mass": 0.01718,
+    "inertia": [
+     1.58809e-06,
+     1.49171e-06,
+     4.20573e-07
+    ],
+    "ipos": [
+     -0.000803077,
+     -1.67703e-05,
+     0.00770942
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger2_tip": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.028999070400428838
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger3_link1": {
+    "mass": 0.0032,
+    "inertia": [
+     1.1e-07,
+     7e-08,
+     5e-08
+    ],
+    "ipos": [
+     -0.00132914,
+     3.4987e-09,
+     0.000319937
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger3_link2": {
+    "mass": 0.033,
+    "inertia": [
+     6.34e-06,
+     6.31472e-06,
+     8.85281e-07
+    ],
+    "ipos": [
+     -4.16442e-07,
+     0.00615758,
+     0.0209112
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger3_link3": {
+    "mass": 0.0165,
+    "inertia": [
+     1.47088e-06,
+     1.44e-06,
+     4.49118e-07
+    ],
+    "ipos": [
+     -0.00112142,
+     4.33099e-06,
+     0.0157628
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger3_link4": {
+    "mass": 0.01718,
+    "inertia": [
+     1.55453e-06,
+     1.45763e-06,
+     4.20205e-07
+    ],
+    "ipos": [
+     -0.000801144,
+     -1.7052e-05,
+     0.00761196
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger3_tip": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.028999070954834977
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger4_link1": {
+    "mass": 0.0032,
+    "inertia": [
+     1.1e-07,
+     7e-08,
+     5e-08
+    ],
+    "ipos": [
+     -0.00132914,
+     1.00475e-08,
+     0.000319948
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger4_link2": {
+    "mass": 0.033,
+    "inertia": [
+     6.34e-06,
+     6.31472e-06,
+     8.85281e-07
+    ],
+    "ipos": [
+     -4.16197e-07,
+     0.00615758,
+     0.0209112
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger4_link3": {
+    "mass": 0.0165,
+    "inertia": [
+     1.47088e-06,
+     1.44e-06,
+     4.49118e-07
+    ],
+    "ipos": [
+     -0.00112141,
+     4.34937e-06,
+     0.0157628
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger4_link4": {
+    "mass": 0.01718,
+    "inertia": [
+     1.58832e-06,
+     1.49181e-06,
+     4.20836e-07
+    ],
+    "ipos": [
+     -0.000801413,
+     -2.37496e-05,
+     0.00770949
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger4_tip": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.02899915200160528
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger5_link1": {
+    "mass": 0.0032,
+    "inertia": [
+     1.1e-07,
+     7e-08,
+     5e-08
+    ],
+    "ipos": [
+     -0.00132914,
+     1.72348e-08,
+     0.000319969
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger5_link2": {
+    "mass": 0.033,
+    "inertia": [
+     6.34e-06,
+     6.31472e-06,
+     8.85281e-07
+    ],
+    "ipos": [
+     -4.14939e-07,
+     0.00615759,
+     0.0209112
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger5_link3": {
+    "mass": 0.0165,
+    "inertia": [
+     1.47088e-06,
+     1.44e-06,
+     4.49118e-07
+    ],
+    "ipos": [
+     -0.00112141,
+     4.37031e-06,
+     0.0157628
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger5_link4": {
+    "mass": 0.01718,
+    "inertia": [
+     1.58815e-06,
+     1.49167e-06,
+     4.20431e-07
+    ],
+    "ipos": [
+     -0.000805572,
+     -1.62002e-05,
+     0.0077094
+    ],
+    "gravcomp": 0.0
+   },
+   "right_finger5_tip": {
+    "mass": 0.0,
+    "inertia": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.028999070148256468
+    ],
+    "gravcomp": 0.0
+   },
+   "table": {
+    "mass": 5.759999999999999,
+    "inertia": [
+     0.17356799999999994,
+     0.02841599999999998,
+     0.20044799999999996
+    ],
+    "ipos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gravcomp": 0.0
+   },
+   "object": {
+    "mass": 0.1,
+    "inertia": [
+     7.754428375099034e-05,
+     7.441120128949495e-05,
+     7.189722963386205e-05
+    ],
+    "ipos": [
+     -0.00025598926820612645,
+     1.3834311093802955e-05,
+     -0.006549890648533555
+    ],
+    "gravcomp": 0.0
+   }
+  },
+  "joints": {
+   "R_arm_j1": {
+    "type": 3,
+    "range": [
+     -3.071,
+     3.071
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "R_arm_j2": {
+    "type": 3,
+    "range": [
+     -1.553,
+     0.453
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "R_arm_j3": {
+    "type": 3,
+    "range": [
+     -3.071,
+     3.071
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "R_arm_j4": {
+    "type": 3,
+    "range": [
+     -3.071,
+     0.244
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "R_arm_j5": {
+    "type": 3,
+    "range": [
+     -3.071,
+     3.071
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "R_arm_j6": {
+    "type": 3,
+    "range": [
+     -1.396,
+     1.396
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "R_arm_j7": {
+    "type": 3,
+    "range": [
+     -1.117,
+     1.378
+    ],
+    "limited": true,
+    "armature": 0.1,
+    "damping": 1.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger1_joint1": {
+    "type": 3,
+    "range": [
+     0.0475,
+     1.6033
+    ],
+    "limited": true,
+    "armature": 0.0005,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger1_joint2": {
+    "type": 3,
+    "range": [
+     -0.1387,
+     0.9324
+    ],
+    "limited": true,
+    "armature": 0.0005,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger1_joint3": {
+    "type": 3,
+    "range": [
+     -0.4642,
+     1.5623
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger1_joint4": {
+    "type": 3,
+    "range": [
+     -0.4699,
+     1.5568
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger2_joint1": {
+    "type": 3,
+    "range": [
+     -0.1585,
+     1.5604
+    ],
+    "limited": true,
+    "armature": 0.0005,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger2_joint2": {
+    "type": 3,
+    "range": [
+     -0.37,
+     0.37
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger2_joint3": {
+    "type": 3,
+    "range": [
+     -0.4777,
+     1.5485
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger2_joint4": {
+    "type": 3,
+    "range": [
+     -0.4683,
+     1.5753
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger3_joint1": {
+    "type": 3,
+    "range": [
+     -0.1644,
+     1.5516
+    ],
+    "limited": true,
+    "armature": 0.0005,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger3_joint2": {
+    "type": 3,
+    "range": [
+     -0.37,
+     0.37
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger3_joint3": {
+    "type": 3,
+    "range": [
+     -0.4739,
+     1.5512
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger3_joint4": {
+    "type": 3,
+    "range": [
+     -0.4684,
+     1.5745
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger4_joint1": {
+    "type": 3,
+    "range": [
+     -0.1554,
+     1.5585
+    ],
+    "limited": true,
+    "armature": 0.0005,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger4_joint2": {
+    "type": 3,
+    "range": [
+     -0.37,
+     0.37
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger4_joint3": {
+    "type": 3,
+    "range": [
+     -0.4765,
+     1.5487
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger4_joint4": {
+    "type": 3,
+    "range": [
+     -0.4777,
+     1.5634
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger5_joint1": {
+    "type": 3,
+    "range": [
+     -0.1626,
+     1.5585
+    ],
+    "limited": true,
+    "armature": 0.0005,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger5_joint2": {
+    "type": 3,
+    "range": [
+     -0.37,
+     0.37
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger5_joint3": {
+    "type": 3,
+    "range": [
+     -0.4768,
+     1.549
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "right_finger5_joint4": {
+    "type": 3,
+    "range": [
+     -0.4683,
+     1.5735
+    ],
+    "limited": true,
+    "armature": 0.0002,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   },
+   "object_joint": {
+    "type": 0,
+    "range": [
+     0.0,
+     0.0
+    ],
+    "limited": false,
+    "armature": 0.0,
+    "damping": 0.0,
+    "frictionloss": 0.0,
+    "stiffness": 0.0
+   }
+  },
+  "geoms": {
+   "terrain#0": {
+    "type": 0,
+    "friction": [
+     1.0,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_palm_link#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger1_link2#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger1_link3#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger1_link4#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger1_link4#1": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.005,
+     0.0005
+    ],
+    "solref": [
+     0.01,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger2_link2#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger2_link3#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger2_link4#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger2_link4#1": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.005,
+     0.0005
+    ],
+    "solref": [
+     0.01,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger3_link2#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger3_link3#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger3_link4#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger3_link4#1": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.005,
+     0.0005
+    ],
+    "solref": [
+     0.01,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger4_link2#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger4_link3#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger4_link4#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger4_link4#1": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.005,
+     0.0005
+    ],
+    "solref": [
+     0.01,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger5_link2#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger5_link3#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger5_link4#0": {
+    "type": 7,
+    "friction": [
+     0.6,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.02,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "right_finger5_link4#1": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.005,
+     0.0005
+    ],
+    "solref": [
+     0.01,
+     1.0
+    ],
+    "solimp": [
+     0.9,
+     0.95,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "table#0": {
+    "type": 6,
+    "friction": [
+     1.0,
+     0.005,
+     0.0001
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 3,
+    "priority": 0,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#0": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#1": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#2": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#3": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#4": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#5": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#6": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#7": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   },
+   "object#8": {
+    "type": 7,
+    "friction": [
+     1.0,
+     0.002,
+     0.002
+    ],
+    "solref": [
+     0.005,
+     1.0
+    ],
+    "solimp": [
+     0.99,
+     0.99,
+     0.001,
+     0.5,
+     2.0
+    ],
+    "condim": 6,
+    "priority": 1,
+    "contype": 1,
+    "conaffinity": 1,
+    "margin": 0.0,
+    "gap": 0.0
+   }
+  },
+  "actuators": {
+   "right_finger1_joint1": {
+    "gainprm": [
+     0.40844710645048043,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.40844710645048043,
+     -0.020882010257063675
+    ],
+    "forcerange": [
+     -0.4452,
+     0.4452
+    ],
+    "is_motor": false
+   },
+   "right_finger1_joint2": {
+    "gainprm": [
+     0.6858601063643346,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.6858601063643346,
+     -0.030610939996373314
+    ],
+    "forcerange": [
+     -0.4259,
+     0.4259
+    ],
+    "is_motor": false
+   },
+   "right_finger1_joint3": {
+    "gainprm": [
+     0.2391112196099482,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.2391112196099482,
+     -0.010181475050560962
+    ],
+    "forcerange": [
+     -0.1888,
+     0.1888
+    ],
+    "is_motor": false
+   },
+   "right_finger1_joint4": {
+    "gainprm": [
+     0.20736128319711747,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.20736128319711747,
+     -0.00909698844675045
+    ],
+    "forcerange": [
+     -0.1468,
+     0.1468
+    ],
+    "is_motor": false
+   },
+   "right_finger2_joint1": {
+    "gainprm": [
+     0.37352218155860073,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.37352218155860073,
+     -0.01882274330029718
+    ],
+    "forcerange": [
+     -0.6188,
+     0.6188
+    ],
+    "is_motor": false
+   },
+   "right_finger2_joint2": {
+    "gainprm": [
+     0.45592448909027794,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.45592448909027794,
+     -0.019798167597016643
+    ],
+    "forcerange": [
+     -0.1822,
+     0.1822
+    ],
+    "is_motor": false
+   },
+   "right_finger2_joint3": {
+    "gainprm": [
+     0.24368366649522863,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.24368366649522863,
+     -0.010477031953162727
+    ],
+    "forcerange": [
+     -0.2251,
+     0.2251
+    ],
+    "is_motor": false
+   },
+   "right_finger2_joint4": {
+    "gainprm": [
+     0.18026971340925335,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.18026971340925335,
+     -0.008240212147903584
+    ],
+    "forcerange": [
+     -0.217,
+     0.217
+    ],
+    "is_motor": false
+   },
+   "right_finger3_joint1": {
+    "gainprm": [
+     0.3687093483646485,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.3687093483646485,
+     -0.01848622487024593
+    ],
+    "forcerange": [
+     -0.6494,
+     0.6494
+    ],
+    "is_motor": false
+   },
+   "right_finger3_joint2": {
+    "gainprm": [
+     0.4164253443634641,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.4164253443634641,
+     -0.018032947229953678
+    ],
+    "forcerange": [
+     -0.1827,
+     0.1827
+    ],
+    "is_motor": false
+   },
+   "right_finger3_joint3": {
+    "gainprm": [
+     0.22218607502059182,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.22218607502059182,
+     -0.009592200014076666
+    ],
+    "forcerange": [
+     -0.2078,
+     0.2078
+    ],
+    "is_motor": false
+   },
+   "right_finger3_joint4": {
+    "gainprm": [
+     0.19427606072023446,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.19427606072023446,
+     -0.009152994605972402
+    ],
+    "forcerange": [
+     -0.2018,
+     0.2018
+    ],
+    "is_motor": false
+   },
+   "right_finger4_joint1": {
+    "gainprm": [
+     0.35718151495111794,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.35718151495111794,
+     -0.018376606800780005
+    ],
+    "forcerange": [
+     -0.6389,
+     0.6389
+    ],
+    "is_motor": false
+   },
+   "right_finger4_joint2": {
+    "gainprm": [
+     0.42977315313086895,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.42977315313086895,
+     -0.01867700966212433
+    ],
+    "forcerange": [
+     -0.1832,
+     0.1832
+    ],
+    "is_motor": false
+   },
+   "right_finger4_joint3": {
+    "gainprm": [
+     0.24930151196247122,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.24930151196247122,
+     -0.01059512121009555
+    ],
+    "forcerange": [
+     -0.2249,
+     0.2249
+    ],
+    "is_motor": false
+   },
+   "right_finger4_joint4": {
+    "gainprm": [
+     0.2285032688178066,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.2285032688178066,
+     -0.009917602877441107
+    ],
+    "forcerange": [
+     -0.2044,
+     0.2044
+    ],
+    "is_motor": false
+   },
+   "right_finger5_joint1": {
+    "gainprm": [
+     0.3655325975433942,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.3655325975433942,
+     -0.018616960278988272
+    ],
+    "forcerange": [
+     -0.6441,
+     0.6441
+    ],
+    "is_motor": false
+   },
+   "right_finger5_joint2": {
+    "gainprm": [
+     0.41393113081120425,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.41393113081120425,
+     -0.018732177029667153
+    ],
+    "forcerange": [
+     -0.1798,
+     0.1798
+    ],
+    "is_motor": false
+   },
+   "right_finger5_joint3": {
+    "gainprm": [
+     0.22729367621965954,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.22729367621965954,
+     -0.00951005441616486
+    ],
+    "forcerange": [
+     -0.2384,
+     0.2384
+    ],
+    "is_motor": false
+   },
+   "right_finger5_joint4": {
+    "gainprm": [
+     0.1964723550341816,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     -0.1964723550341816,
+     -0.009017295241756363
+    ],
+    "forcerange": [
+     -0.1866,
+     0.1866
+    ],
+    "is_motor": false
+   },
+   "R_arm_j1": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -150.0,
+     150.0
+    ],
+    "is_motor": true
+   },
+   "R_arm_j2": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -150.0,
+     150.0
+    ],
+    "is_motor": true
+   },
+   "R_arm_j3": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -80.0,
+     80.0
+    ],
+    "is_motor": true
+   },
+   "R_arm_j4": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -80.0,
+     80.0
+    ],
+    "is_motor": true
+   },
+   "R_arm_j5": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -25.0,
+     25.0
+    ],
+    "is_motor": true
+   },
+   "R_arm_j6": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -25.0,
+     25.0
+    ],
+    "is_motor": true
+   },
+   "R_arm_j7": {
+    "gainprm": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "biasprm": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "forcerange": [
+     -25.0,
+     25.0
+    ],
+    "is_motor": true
+   }
+  },
+  "exclude": []
+ },
+ "mj_model": {
+  "opt": {
+   "timestep": 0.005,
+   "gravity": [
+    0.0,
+    0.0,
+    -9.81
+   ],
+   "impratio": 10.0,
+   "cone": 1,
+   "iterations": 50,
+   "ls_iterations": 50,
+   "integrator": 3
+  }
+ }
+}

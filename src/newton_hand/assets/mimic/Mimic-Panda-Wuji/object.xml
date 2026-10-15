@@ -1,0 +1,33 @@
+<mujoco model="apple">
+  <compiler meshdir="meshes" angle="radian"/>
+
+  <asset>
+    <mesh name="apple_visual" file="object_apple_visual.stl"/>
+    <mesh name="apple_hull_000" file="object_apple_hull_000.stl"/>
+    <mesh name="apple_hull_001" file="object_apple_hull_001.stl"/>
+    <mesh name="apple_hull_002" file="object_apple_hull_002.stl"/>
+    <mesh name="apple_hull_003" file="object_apple_hull_003.stl"/>
+    <mesh name="apple_hull_004" file="object_apple_hull_004.stl"/>
+    <mesh name="apple_hull_005" file="object_apple_hull_005.stl"/>
+    <mesh name="apple_hull_006" file="object_apple_hull_006.stl"/>
+    <mesh name="apple_hull_007" file="object_apple_hull_007.stl"/>
+    <mesh name="apple_hull_008" file="object_apple_hull_008.stl"/>
+  </asset>
+
+  <worldbody>
+    <body name="object">
+      <inertial pos="-0.000255989 1.38343e-05 -0.00654989" quat="0.553819 0.544209 0.587904 0.226914" mass="0.1" diaginertia="7.75443e-05 7.44112e-05 7.18972e-05"/>
+      <joint name="object_joint" type="free"/>
+      <geom name="object_visual" type="mesh" contype="0" conaffinity="0" group="2" mass="0" rgba="0.9 0.75 0.55 1" mesh="apple_visual"/>
+      <geom name="apple_hull_000_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.00023" mesh="apple_hull_000"/>
+      <geom name="apple_hull_001_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.023475" mesh="apple_hull_001"/>
+      <geom name="apple_hull_002_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.023466" mesh="apple_hull_002"/>
+      <geom name="apple_hull_003_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.004187" mesh="apple_hull_003"/>
+      <geom name="apple_hull_004_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.003642" mesh="apple_hull_004"/>
+      <geom name="apple_hull_005_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.023404" mesh="apple_hull_005"/>
+      <geom name="apple_hull_006_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.020733" mesh="apple_hull_006"/>
+      <geom name="apple_hull_007_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="0.000837" mesh="apple_hull_007"/>
+      <geom name="apple_hull_008_collision" type="mesh" condim="6" priority="1" friction="1 0.002 0.002" solref="0.005 1" solimp="0.99 0.99" mass="2.6e-05" mesh="apple_hull_008"/>
+    </body>
+  </worldbody>
+</mujoco>

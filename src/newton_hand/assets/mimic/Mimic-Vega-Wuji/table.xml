@@ -1,0 +1,15 @@
+<mujoco model="MuJoCo Model">
+  <compiler angle="radian"/>
+
+  <default>
+    <default/>
+  </default>
+
+  <worldbody>
+    <body name="mocap_base" mocap="true">
+      <body name="table" pos="0 0.16 0.785">
+        <geom name="table_surface" size="0.12 0.3 0.02" type="box" solref="0.005 1" solimp="0.99 0.99" rgba="0.5 0.35 0.2 1"/>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

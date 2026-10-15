@@ -1,0 +1,462 @@
+<mujoco model="MuJoCo Model">
+  <compiler meshdir="meshes" angle="radian"/>
+
+  <default>
+
+    <default class="attached_main">
+      <default class="panda_main">
+        <default class="panda_panda">
+          <material shininess="0.25"/>
+          <joint range="-2.8973 2.8973" armature="0.1" damping="1"/>
+          <general ctrlrange="-2.8973 2.8973" forcerange="-100 100" biastype="affine" biasprm="0 -1"/>
+          <default class="panda_finger">
+            <joint type="slide" range="0 0.04"/>
+          </default>
+          <default class="panda_visual">
+            <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+          </default>
+          <default class="panda_collision">
+            <geom type="mesh" contype="0" conaffinity="0" group="3"/>
+          </default>
+        </default>
+      </default>
+
+      <default class="hand_main">
+        <default class="allegro_right">
+          <joint damping="0.1"/>
+          <geom density="800"/>
+          <general biastype="affine" biasprm="0 -1"/>
+          <default class="visual">
+            <geom type="mesh" contype="0" conaffinity="0" group="2" material="black"/>
+            <default class="palm_visual">
+              <geom mesh="base_link"/>
+            </default>
+            <default class="base_visual">
+              <geom mesh="link_0.0"/>
+            </default>
+            <default class="proximal_visual">
+              <geom mesh="link_1.0"/>
+            </default>
+            <default class="medial_visual">
+              <geom mesh="link_2.0"/>
+            </default>
+            <default class="distal_visual">
+              <geom mesh="link_3.0"/>
+            </default>
+            <default class="fingertip_visual">
+              <geom material="white" mesh="link_3.0_tip"/>
+            </default>
+            <default class="thumbtip_visual">
+              <geom material="white" mesh="link_15.0_tip"/>
+            </default>
+          </default>
+          <default class="collision">
+            <geom type="box" group="3"/>
+            <default class="palm_collision">
+              <geom size="0.0204 0.0565 0.0475"/>
+            </default>
+            <default class="base_collision">
+              <geom size="0.0098 0.01375 0.0082"/>
+              <default class="thumb_base_collision">
+                <geom size="0.0179 0.017 0.02275"/>
+              </default>
+            </default>
+            <default class="proximal_collision">
+              <geom size="0.0098 0.01375 0.027"/>
+              <default class="thumb_proximal_collision">
+                <geom size="0.0098 0.01375 0.00885"/>
+              </default>
+            </default>
+            <default class="medial_collision">
+              <geom size="0.0098 0.01375 0.0192"/>
+              <default class="thumb_medial_collision">
+                <geom size="0.0098 0.01375 0.0257"/>
+              </default>
+            </default>
+            <default class="distal_collision">
+              <geom size="0.0098 0.01375 0.008"/>
+              <default class="thumb_distal_collision">
+                <geom size="0.0098 0.01375 0.0157"/>
+              </default>
+            </default>
+            <default class="fingertip_collision">
+              <geom size="0.012 0.01 0" type="capsule"/>
+              <default class="thumbtip_collision">
+                <geom size="0.012 0.008 0"/>
+              </default>
+            </default>
+          </default>
+          <default class="base">
+            <joint range="-0.47 0.47"/>
+            <general ctrlrange="-0.47 0.47"/>
+          </default>
+          <default class="proximal">
+            <joint range="-0.196 1.61"/>
+            <general ctrlrange="-0.196 1.61"/>
+          </default>
+          <default class="medial">
+            <joint range="-0.174 1.709"/>
+            <general ctrlrange="-0.174 1.709"/>
+          </default>
+          <default class="distal">
+            <joint range="-0.227 1.618"/>
+            <general ctrlrange="-0.227 1.618"/>
+          </default>
+          <default class="thumb_base">
+            <joint range="0.263 1.396"/>
+            <general ctrlrange="0.263 1.396"/>
+          </default>
+          <default class="thumb_proximal">
+            <joint range="-0.105 1.163"/>
+            <general ctrlrange="-0.105 1.163"/>
+          </default>
+          <default class="thumb_medial">
+            <joint range="-0.189 1.644"/>
+            <general ctrlrange="-0.189 1.644"/>
+          </default>
+          <default class="thumb_distal">
+            <joint range="-0.162 1.719"/>
+            <general ctrlrange="-0.162 1.719"/>
+          </default>
+        </default>
+      </default>
+    </default>
+  </default>
+
+  <asset>
+    <material name="panda_white" class="panda_panda"/>
+    <material name="panda_off_white" class="panda_panda" rgba="0.901961 0.921569 0.929412 1"/>
+    <material name="panda_black" class="panda_panda" rgba="0.25 0.25 0.25 1"/>
+    <material name="panda_green" class="panda_panda" rgba="0 1 0 1"/>
+    <material name="panda_light_blue" class="panda_panda" rgba="0.039216 0.541176 0.780392 1"/>
+    <material name="black" rgba="0.2 0.2 0.2 1"/>
+    <material name="white" rgba="0.9 0.9 0.9 1"/>
+    <mesh name="panda_link0_c" file="robot_link0.stl"/>
+    <mesh name="panda_link1_c" file="robot_link1.stl"/>
+    <mesh name="panda_link2_c" file="robot_link2.stl"/>
+    <mesh name="panda_link3_c" file="robot_link3.stl"/>
+    <mesh name="panda_link4_c" file="robot_link4.stl"/>
+    <mesh name="panda_link5_c0" file="robot_link5_collision_0.obj"/>
+    <mesh name="panda_link5_c1" file="robot_link5_collision_1.obj"/>
+    <mesh name="panda_link5_c2" file="robot_link5_collision_2.obj"/>
+    <mesh name="panda_link6_c" file="robot_link6.stl"/>
+    <mesh name="panda_link7_c" file="robot_link7.stl"/>
+    <mesh name="panda_link0_0" file="robot_link0_0.obj"/>
+    <mesh name="panda_link0_1" file="robot_link0_1.obj"/>
+    <mesh name="panda_link0_2" file="robot_link0_2.obj"/>
+    <mesh name="panda_link0_3" file="robot_link0_3.obj"/>
+    <mesh name="panda_link0_4" file="robot_link0_4.obj"/>
+    <mesh name="panda_link0_5" file="robot_link0_5.obj"/>
+    <mesh name="panda_link0_7" file="robot_link0_7.obj"/>
+    <mesh name="panda_link0_8" file="robot_link0_8.obj"/>
+    <mesh name="panda_link0_9" file="robot_link0_9.obj"/>
+    <mesh name="panda_link0_10" file="robot_link0_10.obj"/>
+    <mesh name="panda_link0_11" file="robot_link0_11.obj"/>
+    <mesh name="panda_link1" file="robot_link1.obj"/>
+    <mesh name="panda_link2" file="robot_link2.obj"/>
+    <mesh name="panda_link3_0" file="robot_link3_0.obj"/>
+    <mesh name="panda_link3_1" file="robot_link3_1.obj"/>
+    <mesh name="panda_link3_2" file="robot_link3_2.obj"/>
+    <mesh name="panda_link3_3" file="robot_link3_3.obj"/>
+    <mesh name="panda_link4_0" file="robot_link4_0.obj"/>
+    <mesh name="panda_link4_1" file="robot_link4_1.obj"/>
+    <mesh name="panda_link4_2" file="robot_link4_2.obj"/>
+    <mesh name="panda_link4_3" file="robot_link4_3.obj"/>
+    <mesh name="panda_link5_0" file="robot_link5_0.obj"/>
+    <mesh name="panda_link5_1" file="robot_link5_1.obj"/>
+    <mesh name="panda_link5_2" file="robot_link5_2.obj"/>
+    <mesh name="panda_link6_0" file="robot_link6_0.obj"/>
+    <mesh name="panda_link6_1" file="robot_link6_1.obj"/>
+    <mesh name="panda_link6_2" file="robot_link6_2.obj"/>
+    <mesh name="panda_link6_3" file="robot_link6_3.obj"/>
+    <mesh name="panda_link6_4" file="robot_link6_4.obj"/>
+    <mesh name="panda_link6_5" file="robot_link6_5.obj"/>
+    <mesh name="panda_link6_6" file="robot_link6_6.obj"/>
+    <mesh name="panda_link6_7" file="robot_link6_7.obj"/>
+    <mesh name="panda_link6_8" file="robot_link6_8.obj"/>
+    <mesh name="panda_link6_9" file="robot_link6_9.obj"/>
+    <mesh name="panda_link6_10" file="robot_link6_10.obj"/>
+    <mesh name="panda_link6_11" file="robot_link6_11.obj"/>
+    <mesh name="panda_link6_12" file="robot_link6_12.obj"/>
+    <mesh name="panda_link6_13" file="robot_link6_13.obj"/>
+    <mesh name="panda_link6_14" file="robot_link6_14.obj"/>
+    <mesh name="panda_link6_15" file="robot_link6_15.obj"/>
+    <mesh name="panda_link6_16" file="robot_link6_16.obj"/>
+    <mesh name="panda_link7_0" file="robot_link7_0.obj"/>
+    <mesh name="panda_link7_1" file="robot_link7_1.obj"/>
+    <mesh name="panda_link7_2" file="robot_link7_2.obj"/>
+    <mesh name="panda_link7_3" file="robot_link7_3.obj"/>
+    <mesh name="panda_link7_4" file="robot_link7_4.obj"/>
+    <mesh name="panda_link7_5" file="robot_link7_5.obj"/>
+    <mesh name="panda_link7_6" file="robot_link7_6.obj"/>
+    <mesh name="panda_link7_7" file="robot_link7_7.obj"/>
+    <mesh name="base_link" file="robot_base_link.stl"/>
+    <mesh name="link_0.0" file="robot_link_0.0.stl"/>
+    <mesh name="link_1.0" file="robot_link_1.0.stl"/>
+    <mesh name="link_2.0" file="robot_link_2.0.stl"/>
+    <mesh name="link_3.0" file="robot_link_3.0.stl"/>
+    <mesh name="link_3.0_tip" file="robot_link_3.0_tip.stl"/>
+    <mesh name="link_12.0_right" file="robot_link_12.0_right.stl"/>
+    <mesh name="link_13.0" file="robot_link_13.0.stl"/>
+    <mesh name="link_14.0" file="robot_link_14.0.stl"/>
+    <mesh name="link_15.0" file="robot_link_15.0.stl"/>
+    <mesh name="link_15.0_tip" file="robot_link_15.0_tip.stl"/>
+  </asset>
+
+  <worldbody>
+    <body name="mocap_base" mocap="true">
+      <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
+      <body name="panda_link0" childclass="panda_panda" gravcomp="1">
+        <inertial pos="-0.041018 -0.00014 0.049974" quat="0.00630474 0.751245 0.00741774 0.659952" mass="0.629769" diaginertia="0.00430465 0.00387984 0.00313051"/>
+        <geom class="panda_visual" material="panda_off_white" mesh="panda_link0_0"/>
+        <geom class="panda_visual" material="panda_black" mesh="panda_link0_1"/>
+        <geom class="panda_visual" material="panda_off_white" mesh="panda_link0_2"/>
+        <geom class="panda_visual" material="panda_black" mesh="panda_link0_3"/>
+        <geom class="panda_visual" material="panda_off_white" mesh="panda_link0_4"/>
+        <geom class="panda_visual" material="panda_black" mesh="panda_link0_5"/>
+        <geom class="panda_visual" material="panda_white" mesh="panda_link0_7"/>
+        <geom class="panda_visual" material="panda_white" mesh="panda_link0_8"/>
+        <geom class="panda_visual" material="panda_black" mesh="panda_link0_9"/>
+        <geom class="panda_visual" material="panda_off_white" mesh="panda_link0_10"/>
+        <geom class="panda_visual" material="panda_white" mesh="panda_link0_11"/>
+        <geom class="panda_collision" mesh="panda_link0_c"/>
+        <body name="panda_link1" pos="0 0 0.333" gravcomp="1">
+          <inertial pos="0.003875 0.002081 -0.04762" quat="0.711549 0.00634377 -0.0131124 0.702485" mass="4.97068" diaginertia="0.707137 0.703435 0.00852456"/>
+          <joint name="panda_joint1" pos="0 0 0" axis="0 0 1"/>
+          <geom class="panda_visual" material="panda_white" mesh="panda_link1"/>
+          <geom class="panda_collision" mesh="panda_link1_c"/>
+          <body name="panda_link2" quat="0.707107 -0.707107 0 0" gravcomp="1">
+            <inertial pos="-0.003141 -0.02872 0.003495" quat="-0.168175 0.828366 -0.122878 0.520027" mass="0.646926" diaginertia="0.0310326 0.0283001 0.00273425"/>
+            <joint name="panda_joint2" pos="0 0 0" axis="0 0 1" range="-1.7628 1.7628"/>
+            <geom class="panda_visual" material="panda_white" mesh="panda_link2"/>
+            <geom class="panda_collision" mesh="panda_link2_c"/>
+            <body name="panda_link3" pos="0 -0.316 0" quat="0.707107 0.707107 0 0" gravcomp="1">
+              <inertial pos="0.027518 0.039252 -0.066502" quat="0.662769 -0.00678331 0.252053 0.705096" mass="3.2286" diaginertia="0.0415014 0.0414793 0.00124635"/>
+              <joint name="panda_joint3" pos="0 0 0" axis="0 0 1"/>
+              <geom class="panda_visual" material="panda_white" mesh="panda_link3_0"/>
+              <geom class="panda_visual" material="panda_white" mesh="panda_link3_1"/>
+              <geom class="panda_visual" material="panda_white" mesh="panda_link3_2"/>
+              <geom class="panda_visual" material="panda_black" mesh="panda_link3_3"/>
+              <geom class="panda_collision" mesh="panda_link3_c"/>
+              <body name="panda_link4" pos="0.0825 0 0" quat="0.707107 0.707107 0 0" gravcomp="1">
+                <inertial pos="-0.05317 0.104419 0.027454" quat="0.65058 0.529822 -0.0962034 0.535518" mass="3.5879" diaginertia="0.0349596 0.0281483 0.0106201"/>
+                <joint name="panda_joint4" pos="0 0 0" axis="0 0 1" range="-3.0718 -0.0698"/>
+                <geom class="panda_visual" material="panda_white" mesh="panda_link4_0"/>
+                <geom class="panda_visual" material="panda_white" mesh="panda_link4_1"/>
+                <geom class="panda_visual" material="panda_black" mesh="panda_link4_2"/>
+                <geom class="panda_visual" material="panda_white" mesh="panda_link4_3"/>
+                <geom class="panda_collision" mesh="panda_link4_c"/>
+                <body name="panda_link5" pos="-0.0825 0.384 0" quat="0.707107 -0.707107 0 0" gravcomp="1">
+                  <inertial pos="-0.011953 0.041065 -0.038437" quat="0.987313 -0.0121954 0.0719187 -0.141037" mass="1.22595" diaginertia="0.0367625 0.0288531 0.00803437"/>
+                  <joint name="panda_joint5" pos="0 0 0" axis="0 0 1"/>
+                  <geom class="panda_visual" material="panda_black" mesh="panda_link5_0"/>
+                  <geom class="panda_visual" material="panda_white" mesh="panda_link5_1"/>
+                  <geom class="panda_visual" material="panda_white" mesh="panda_link5_2"/>
+                  <geom class="panda_collision" mesh="panda_link5_c0"/>
+                  <geom class="panda_collision" mesh="panda_link5_c1"/>
+                  <geom class="panda_collision" mesh="panda_link5_c2"/>
+                  <body name="panda_link6" quat="0.707107 0.707107 0 0" gravcomp="1">
+                    <inertial pos="0.060149 -0.014117 -0.010517" quat="0.101075 0.59332 0.0287227 0.798079" mass="1.66656" diaginertia="0.00584276 0.00431037 0.00159787"/>
+                    <joint name="panda_joint6" pos="0 0 0" axis="0 0 1" range="-0.0175 3.7525"/>
+                    <geom class="panda_visual" material="panda_off_white" mesh="panda_link6_0"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_1"/>
+                    <geom class="panda_visual" material="panda_black" mesh="panda_link6_2"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_3"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_4"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_5"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_6"/>
+                    <geom class="panda_visual" material="panda_light_blue" mesh="panda_link6_7"/>
+                    <geom class="panda_visual" material="panda_light_blue" mesh="panda_link6_8"/>
+                    <geom class="panda_visual" material="panda_black" mesh="panda_link6_9"/>
+                    <geom class="panda_visual" material="panda_black" mesh="panda_link6_10"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_11"/>
+                    <geom class="panda_visual" material="panda_green" mesh="panda_link6_12"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_13"/>
+                    <geom class="panda_visual" material="panda_black" mesh="panda_link6_14"/>
+                    <geom class="panda_visual" material="panda_black" mesh="panda_link6_15"/>
+                    <geom class="panda_visual" material="panda_white" mesh="panda_link6_16"/>
+                    <geom class="panda_collision" mesh="panda_link6_c"/>
+                    <body name="panda_link7" pos="0.088 0 0" quat="0.707107 0.707107 0 0" gravcomp="1">
+                      <inertial pos="0.010517 -0.004252 0.061597" quat="0.992939 -0.0762041 0.0733595 -0.0537067" mass="0.735522" diaginertia="0.0127345 0.0101055 0.00451803"/>
+                      <joint name="panda_joint7" pos="0 0 0" axis="0 0 1"/>
+                      <geom class="panda_visual" material="panda_white" mesh="panda_link7_0"/>
+                      <geom class="panda_visual" material="panda_black" mesh="panda_link7_1"/>
+                      <geom class="panda_visual" material="panda_black" mesh="panda_link7_2"/>
+                      <geom class="panda_visual" material="panda_black" mesh="panda_link7_3"/>
+                      <geom class="panda_visual" material="panda_black" mesh="panda_link7_4"/>
+                      <geom class="panda_visual" material="panda_black" mesh="panda_link7_5"/>
+                      <geom class="panda_visual" material="panda_black" mesh="panda_link7_6"/>
+                      <geom class="panda_visual" material="panda_white" mesh="panda_link7_7"/>
+                      <geom class="panda_collision" mesh="panda_link7_c"/>
+                      <geom size="0.035 0.01" pos="0 0 0.117" type="cylinder" contype="0" conaffinity="0" group="2" rgba="0.2 0.2 0.2 1"/>
+                      <body name="palm" childclass="allegro_right" pos="0.00657609 -0.00657609 0.222" quat="0.92388 0 0 -0.382683" gravcomp="1">
+                        <inertial pos="-0.00898561 -0.0039571 -0.0402693" quat="0.471798 0.881692 0.00304807 -0.00406115" mass="0.351356" diaginertia="0.000447697 0.000300671 0.000243545"/>
+                        <geom name="palm_visual" class="palm_visual" mesh="base_link"/>
+                        <geom name="palm_collision" class="palm_collision" pos="-0.0093 0 -0.0475" friction="0.6" mass="0"/>
+                        <body name="ff_base" pos="0 0.0435 -0.001542" quat="0.999048 -0.0436194 0 0">
+                          <inertial pos="-0.000778127 -1.02867e-05 0.00828249" quat="0.684209 0.685862 -0.175077 0.1755" mass="0.00723202" diaginertia="7.65376e-07 6.88843e-07 3.55046e-07"/>
+                          <joint name="ffj0" class="base" pos="0 0 0" axis="0 0 1" armature="0.002"/>
+                          <geom name="ff_base_visual" class="base_visual" mesh="link_0.0"/>
+                          <geom name="ff_base_collision" class="base_collision" pos="0 0 0.0082" friction="0.6" mass="0"/>
+                          <body name="ff_proximal" pos="0 0 0.0164">
+                            <inertial pos="2.75233e-08 -9.05955e-05 0.0269998" mass="0.0272761" diaginertia="1.18624e-05 1.12768e-05 2.26587e-06"/>
+                            <joint name="ffj1" class="proximal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                            <geom name="ff_proximal_visual" class="proximal_visual" mesh="link_1.0"/>
+                            <geom name="ff_proximal_collision" class="proximal_collision" pos="0 0 0.027" friction="0.6" mass="0"/>
+                            <body name="ff_medial" pos="0 0 0.054">
+                              <inertial pos="-0.000192882 -7.79042e-05 0.022586" quat="0.999903 -0.000289318 0.0139234 4.02869e-06" mass="0.0184637" diaginertia="4.28733e-06 3.63564e-06 1.67367e-06"/>
+                              <joint name="ffj2" class="medial" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                              <geom name="ff_medial_visual" class="medial_visual" mesh="link_2.0"/>
+                              <geom name="ff_medial_collision" class="medial_collision" pos="0 0 0.0192" friction="0.6" mass="0"/>
+                              <body name="ff_distal" pos="0 0 0.0384">
+                                <inertial pos="-0.000520806 -3.32499e-06 0.00725129" quat="0.687735 0.687735 0.164378 -0.164378" mass="0.00751231" diaginertia="7.9638e-07 7.28166e-07 3.77752e-07"/>
+                                <joint name="ffj3" class="distal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                                <geom name="ff_distal_visual" class="distal_visual" mesh="link_3.0"/>
+                                <geom name="ff_distal_collision" class="distal_collision" pos="0 0 0.008" friction="0.6" mass="0"/>
+                                <body name="ff_tip">
+                                  <inertial pos="7.27631e-12 -1.15603e-07 0.0254028" mass="0.00684452" diaginertia="4.55823e-07 4.55814e-07 4.49559e-07"/>
+                                  <geom name="ff_tip_visual" class="fingertip_visual" pos="0 0 0.0267" mesh="link_3.0_tip"/>
+                                  <geom name="ff_tip_collision" class="fingertip_collision" pos="0 0 0.019" condim="6" priority="1" friction="1 0.005 0.0005" solref="0.01 1" mass="0"/>
+                                  <body name="ff_tip_head" pos="0 0 0.035">
+                                    <inertial pos="0 0 0.035" mass="0" diaginertia="0 0 0"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                        <body name="mf_base" pos="0 0 0.0007">
+                          <inertial pos="-0.000778127 -1.02867e-05 0.00828249" quat="0.684209 0.685862 -0.175077 0.1755" mass="0.00723202" diaginertia="7.65376e-07 6.88843e-07 3.55046e-07"/>
+                          <joint name="mfj0" class="base" pos="0 0 0" axis="0 0 1" armature="0.002"/>
+                          <geom name="mf_base_visual" class="base_visual" mesh="link_0.0"/>
+                          <geom name="mf_base_collision" class="base_collision" pos="0 0 0.0082" friction="0.6" mass="0"/>
+                          <body name="mf_proximal" pos="0 0 0.0164">
+                            <inertial pos="2.75233e-08 -9.05955e-05 0.0269998" mass="0.0272761" diaginertia="1.18624e-05 1.12768e-05 2.26587e-06"/>
+                            <joint name="mfj1" class="proximal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                            <geom name="mf_proximal_visual" class="proximal_visual" mesh="link_1.0"/>
+                            <geom name="mf_proximal_collision" class="proximal_collision" pos="0 0 0.027" friction="0.6" mass="0"/>
+                            <body name="mf_medial" pos="0 0 0.054">
+                              <inertial pos="-0.000192882 -7.79042e-05 0.022586" quat="0.999903 -0.000289318 0.0139234 4.02869e-06" mass="0.0184637" diaginertia="4.28733e-06 3.63564e-06 1.67367e-06"/>
+                              <joint name="mfj2" class="medial" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                              <geom name="mf_medial_visual" class="medial_visual" mesh="link_2.0"/>
+                              <geom name="mf_medial_collision" class="medial_collision" pos="0 0 0.0192" friction="0.6" mass="0"/>
+                              <body name="mf_distal" pos="0 0 0.0384">
+                                <inertial pos="-0.000520806 -3.32499e-06 0.00725129" quat="0.687735 0.687735 0.164378 -0.164378" mass="0.00751231" diaginertia="7.9638e-07 7.28166e-07 3.77752e-07"/>
+                                <joint name="mfj3" class="distal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                                <geom name="mf_distal_visual" class="distal_visual" mesh="link_3.0"/>
+                                <geom name="mf_distal_collision" class="distal_collision" pos="0 0 0.008" friction="0.6" mass="0"/>
+                                <body name="mf_tip">
+                                  <inertial pos="7.27631e-12 -1.15603e-07 0.0254028" mass="0.00684452" diaginertia="4.55823e-07 4.55814e-07 4.49559e-07"/>
+                                  <geom name="mf_tip_visual" class="fingertip_visual" pos="0 0 0.0267" mesh="link_3.0_tip"/>
+                                  <geom name="mf_tip_collision" class="fingertip_collision" pos="0 0 0.019" condim="6" priority="1" friction="1 0.005 0.0005" solref="0.01 1" mass="0"/>
+                                  <body name="mf_tip_head" pos="0 0 0.035">
+                                    <inertial pos="0 0 0.035" mass="0" diaginertia="0 0 0"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                        <body name="rf_base" pos="0 -0.0435 -0.001542" quat="0.999048 0.0436194 0 0">
+                          <inertial pos="-0.000778127 -1.02867e-05 0.00828249" quat="0.684209 0.685862 -0.175077 0.1755" mass="0.00723202" diaginertia="7.65376e-07 6.88843e-07 3.55046e-07"/>
+                          <joint name="rfj0" class="base" pos="0 0 0" axis="0 0 1" armature="0.002"/>
+                          <geom name="rf_base_visual" class="base_visual" mesh="link_0.0"/>
+                          <geom name="rf_base_collision" class="base_collision" pos="0 0 0.0082" friction="0.6" mass="0"/>
+                          <body name="rf_proximal" pos="0 0 0.0164">
+                            <inertial pos="2.75233e-08 -9.05955e-05 0.0269998" mass="0.0272761" diaginertia="1.18624e-05 1.12768e-05 2.26587e-06"/>
+                            <joint name="rfj1" class="proximal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                            <geom name="rf_proximal_visual" class="proximal_visual" mesh="link_1.0"/>
+                            <geom name="rf_proximal_collision" class="proximal_collision" pos="0 0 0.027" friction="0.6" mass="0"/>
+                            <body name="rf_medial" pos="0 0 0.054">
+                              <inertial pos="-0.000192882 -7.79042e-05 0.022586" quat="0.999903 -0.000289318 0.0139234 4.02869e-06" mass="0.0184637" diaginertia="4.28733e-06 3.63564e-06 1.67367e-06"/>
+                              <joint name="rfj2" class="medial" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                              <geom name="rf_medial_visual" class="medial_visual" mesh="link_2.0"/>
+                              <geom name="rf_medial_collision" class="medial_collision" pos="0 0 0.0192" friction="0.6" mass="0"/>
+                              <body name="rf_distal" pos="0 0 0.0384">
+                                <inertial pos="-0.000520806 -3.32499e-06 0.00725129" quat="0.687735 0.687735 0.164378 -0.164378" mass="0.00751231" diaginertia="7.9638e-07 7.28166e-07 3.77752e-07"/>
+                                <joint name="rfj3" class="distal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                                <geom name="rf_distal_visual" class="distal_visual" mesh="link_3.0"/>
+                                <geom name="rf_distal_collision" class="distal_collision" pos="0 0 0.008" friction="0.6" mass="0"/>
+                                <body name="rf_tip">
+                                  <inertial pos="7.27631e-12 -1.15603e-07 0.0254028" mass="0.00684452" diaginertia="4.55823e-07 4.55814e-07 4.49559e-07"/>
+                                  <geom name="rf_tip_visual" class="fingertip_visual" pos="0 0 0.0267" mesh="link_3.0_tip"/>
+                                  <geom name="rf_tip_collision" class="fingertip_collision" pos="0 0 0.019" condim="6" priority="1" friction="1 0.005 0.0005" solref="0.01 1" mass="0"/>
+                                  <body name="rf_tip_head" pos="0 0 0.035">
+                                    <inertial pos="0 0 0.035" mass="0" diaginertia="0 0 0"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                        <body name="th_base" pos="-0.0182 0.019333 -0.045987" quat="0.477714 -0.521334 -0.521334 -0.477714">
+                          <inertial pos="-0.0179151 0.00802441 0.0123141" quat="0.700902 0.0591515 -0.0631752 0.707988" mass="0.0382581" diaginertia="1.07532e-05 9.16559e-06 7.10908e-06"/>
+                          <joint name="thj0" class="thumb_base" pos="0 0 0" axis="-1 0 0" armature="0.002"/>
+                          <geom name="th_base_visual" class="visual" mesh="link_12.0_right"/>
+                          <geom name="th_base_collision" class="thumb_base_collision" pos="-0.0179 0.009 0.0145" friction="0.6" mass="0"/>
+                          <body name="th_proximal" pos="-0.027 0.005 0.0399">
+                            <inertial pos="-0.000782027 -1.02494e-05 0.00810455" quat="0.683996 0.685644 -0.175915 0.176339" mass="0.00721931" diaginertia="7.63748e-07 6.874e-07 3.53932e-07"/>
+                            <joint name="thj1" class="thumb_proximal" pos="0 0 0" axis="0 0 1" armature="0.002"/>
+                            <geom name="th_proximal_visual" class="visual" mesh="link_13.0"/>
+                            <geom name="th_proximal_collision" class="thumb_proximal_collision" pos="0 0 0.00885" friction="0.6" mass="0"/>
+                            <body name="th_medial" pos="0 0 0.0177">
+                              <inertial pos="-0.000164336 1.71482e-05 0.0211119" quat="0.99996 0 -0.00896424 0" mass="0.0224965" diaginertia="7.52764e-06 6.58333e-06 2.14106e-06"/>
+                              <joint name="thj2" class="thumb_medial" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                              <geom name="th_medial_visual" class="visual" mesh="link_14.0"/>
+                              <geom name="th_medial_collision" class="thumb_medial_collision" pos="0 0 0.0257" friction="0.6" mass="0"/>
+                              <body name="th_distal" pos="0 0 0.0514">
+                                <inertial pos="0 3.67706e-06 0.013075" quat="0.999998 0.00194544 0 0" mass="0.0163345" diaginertia="2.91378e-06 2.5902e-06 1.35652e-06"/>
+                                <joint name="thj3" class="thumb_distal" pos="0 0 0" axis="0 1 0" armature="0.002"/>
+                                <geom name="th_distal_visual" class="visual" mesh="link_15.0"/>
+                                <geom name="th_distal_collision" class="thumb_distal_collision" pos="0 0 0.0157" friction="0.6" mass="0"/>
+                                <body name="th_tip">
+                                  <inertial pos="7.27631e-12 -1.15603e-07 0.0410028" mass="0.00684452" diaginertia="4.55823e-07 4.55814e-07 4.49559e-07"/>
+                                  <geom name="th_tip_visual" class="thumbtip_visual" pos="0 0 0.0423" mesh="link_15.0_tip"/>
+                                  <geom name="th_tip_collision" class="thumbtip_collision" pos="0 0 0.035" condim="6" priority="1" friction="1 0.005 0.0005" solref="0.01 1" mass="0"/>
+                                  <body name="th_tip_head" pos="0 0 0.05">
+                                    <inertial pos="0 0 0.05" mass="0" diaginertia="0 0 0"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="panda_link0" body2="panda_link1"/>
+    <exclude body1="palm" body2="ff_base"/>
+    <exclude body1="palm" body2="mf_base"/>
+    <exclude body1="palm" body2="rf_base"/>
+    <exclude body1="palm" body2="th_base"/>
+    <exclude body1="palm" body2="th_proximal"/>
+  </contact>
+  <actuator>
+    <position name="ffj0" joint="ffj0" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="ffj2" joint="ffj2" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="mfj0" joint="mfj0" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="mfj2" joint="mfj2" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="rfj0" joint="rfj0" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="rfj2" joint="rfj2" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="thj3" joint="thj3" kp="1.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="ffj1" joint="ffj1" kp="1.5" kv="0.05" forcerange="-0.7 0.7"/>
+    <position name="mfj1" joint="mfj1" kp="1.5" kv="0.05" forcerange="-0.7 0.7"/>
+    <position name="rfj1" joint="rfj1" kp="1.5" kv="0.05" forcerange="-0.7 0.7"/>
+    <position name="ffj3" joint="ffj3" kp="2.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="mfj3" joint="mfj3" kp="2.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="rfj3" joint="rfj3" kp="2.5" kv="0.0375" forcerange="-0.7 0.7"/>
+    <position name="thj0" joint="thj0" kp="2.5" kv="0.075" forcerange="-0.7 0.7"/>
+    <position name="thj1" joint="thj1" kp="2.5" kv="0.05" forcerange="-0.7 0.7"/>
+    <position name="thj2" joint="thj2" kp="2.5" kv="0.05" forcerange="-0.7 0.7"/>
+  </actuator>
+</mujoco>

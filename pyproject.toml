@@ -1,0 +1,36 @@
+[project]
+name = "newton-hand"
+version = "0.1.0"
+description = "Dexterous-hand METRA grasping on the Newton physics engine (port of mjlab_hand's random-object task)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "newton[sim,importers]==1.6.1",
+    "torch>=2.10.0",
+    "rsl-rl-lib==5.2.0",
+    "trimesh>=4.6.8",
+    "tyro>=0.9",
+    "wandb>=0.25,<0.26",  # rsl-rl 5.2 passes Settings(start_method=...), removed in later wandb
+    "tensorboard",
+    "pyglet>=2.1.6,<3",
+    "imageio[ffmpeg]",
+]
+
+[project.scripts]
+train-newton = "newton_hand.cli.train:main"
+play-newton = "newton_hand.cli.play:main"
+train-mimic = "newton_hand.cli.train_mimic:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/newton_hand"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
